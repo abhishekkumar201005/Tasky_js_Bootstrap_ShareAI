@@ -1,4 +1,3 @@
-// Parent element to store cards
 const taskContainer = document.querySelector(".task__container");
 
 // Global Store
@@ -50,6 +49,7 @@ const loadInitialTaskCards = () => {
 
   // map around the array to generate HTML card and inject it to DOM
   cards.map((cardObject) => {
+    // in place of map we also use forEach
     const createNewCard = newCard(cardObject);
     taskContainer.insertAdjacentHTML("beforeend", createNewCard);
     globalStore.push(cardObject);
