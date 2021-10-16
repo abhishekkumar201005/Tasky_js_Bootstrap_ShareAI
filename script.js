@@ -1,5 +1,4 @@
 const taskContainer = document.querySelector(".task__container");
-
 // Global Store
 let globalStore = [];
 
@@ -104,6 +103,7 @@ const deleteCard = (event) => {
   );
 };
 
+// ------------------------------FOR EDIT BUtton------------------------------------------//
 const editCard = (event) => {
   event = window.event;
   const targetID = event.target.id;
